@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CartComponent } from './cart/cart.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SweetAlert2Module
   ],
   providers: [],
   bootstrap: [AppComponent]

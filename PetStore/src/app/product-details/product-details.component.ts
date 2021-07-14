@@ -16,7 +16,7 @@ export class ProductDetailsComponent implements OnInit {
   constructor(private route: ActivatedRoute, private cartService: CartService) { }
 
   addToCart(product: any) {
-    alert("this item is added to the cart");
+    alert("This item is added to the cart");
     this.cartService.addToCart(product);
   }
 
