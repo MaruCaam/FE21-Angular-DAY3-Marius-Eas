@@ -1,7 +1,8 @@
 <h2>Products</h2>
-<div *ngFor="let val of products; index as id">
-    <div class="container-fluid row">
-    <div class="card col" style="width: 18rem;">
+
+<div class="row">
+  <div *ngFor="let val of products; index as id" class="container-fluid col-lg-3 col-md-6 col-sm-12">
+    <div class="card" style="width: 18rem;">
         <img src="{{val.image}}" class="card-img-top" alt="...">
         <div class="card-body">
         <a routerLink="products/{{id}}"> <h5 class="card-title">{{val.name}}</h5></a> 
@@ -10,9 +11,13 @@
             Description: {{ val.description }}
           </p>
           <p class="card-text">{{val.price | currency }}</p>
-          <a href="#" class="btn btn-primary">Add to Cart</a>
+          <a class="btn btn-primary">Add to Cart</a>
         </div>
       </div>
     </div>
- 
-</div>
+  </div>
+<!-- 
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 flex-wrap"> -->
